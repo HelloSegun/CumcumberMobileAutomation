@@ -3,3 +3,4 @@
 (2.) There are some variables you need to add to "Quidco.feature" and "DriverFactory.java" files respectively.
 (3.) Add Firstname, Lastname, Email and password to the Quidco.feature scenario file
 (4.) Add device name, device android version, device groups, device serial number to the DriverFactory.java file.
+(5.) Update the path to the apk file
