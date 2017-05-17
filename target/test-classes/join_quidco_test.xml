@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite guice-stage="DEVELOPMENT" name="Component Tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http://192.168.99.100:3003"/>
+  <parameter name="sUsername" value="admin"/>
+  <parameter name="sPassword" value="password"/>
+
+
+  <test verbose="2" name="New User Joining Quidco" preserve-order="true">
+ 	<classes>
+ 		<class name="com.cucumber.automation.utils.DriverFactory"/>
+ 	</classes>
+  </test>
+ 
+</suite>

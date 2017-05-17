@@ -11,19 +11,7 @@
   	<cucumber.version>1.2.5</cucumber.version>
   </properties>
   
-  <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
-        <configuration>
-          <source/>
-          <target/>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+
   
   <dependencies>
   	<!--  cucumber -->
@@ -44,26 +32,31 @@
     	<groupId>info.cukes</groupId>
     	<artifactId>cucumber-core</artifactId>
     	<version>${cucumber.version}</version>
+    	<scope>test</scope>
 	</dependency>
 	<dependency>
     	<groupId>info.cukes</groupId>
     	<artifactId>cucumber-jvm-deps</artifactId>
     	<version>1.0.5</version>
+    	<scope>test</scope>
 	</dependency>
 	<dependency>
     	<groupId>info.cukes</groupId>
     	<artifactId>gherkin-jvm-deps</artifactId>
     	<version>1.0.2</version>
+    	<scope>test</scope>
 	</dependency>
 	<dependency>
     	<groupId>info.cukes</groupId>
     	<artifactId>gherkin</artifactId>
     	<version>2.12.2</version>
+    	<scope>test</scope>
 	</dependency>
 	<dependency>
     	<groupId>info.cukes</groupId>
     	<artifactId>cucumber-html</artifactId>
     	<version>0.2.6</version>
+    	<scope>test</scope>
 	</dependency>
 	
 	
@@ -72,7 +65,11 @@
          <groupId>io.appium</groupId>
          <artifactId>java-client</artifactId>
          <version>${appium.version}</version>
+         <scope>test</scope>
     </dependency>
+    
+
   </dependencies>
+
   
 </project>
